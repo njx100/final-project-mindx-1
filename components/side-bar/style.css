@@ -4,8 +4,7 @@ body {
 
 #side_nav {
   background: rgb(17, 17, 17);
-  min-width: 250px;
-  max-width: 250px;
+  width: 250px;
 }
 
 .content {
@@ -48,4 +47,10 @@ hr.h-color {
 
 .content-bg {
   background: #f9fafd;
+}
+
+@media screen and (max-width: 768px) {
+  #side_nav {
+    width: 70px;
+  }
 }
