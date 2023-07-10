@@ -1,19 +1,19 @@
-import {orderList} from './order-list.js';
+import { orderList } from "../data/order-list_data.js";
 
-let orderListHTML = ''
+let orderListHTML = "";
 
-for(let i = 0; i < orderList.length; i++) {
+for (let i = 0; i < orderList.length; i++) {
   let status = orderList[i].status;
 
-  if (status === 'Pending') {
-    status = `<span class="badge text-bg-danger">Pending</span>`
-  } else if (status === 'Delivered') {
-    status = `<span class="badge text-bg-success">Delivered</span>`
-  } else if (status === 'Cancelled') {
-    status = `<span class="badge text-bg-dark">Cancelled</span>`
-  };
-  
-  orderListHTML +=`
+  if (status === "Pending") {
+    status = `<span class="badge text-bg-danger">Pending</span>`;
+  } else if (status === "Delivered") {
+    status = `<span class="badge text-bg-success">Delivered</span>`;
+  } else if (status === "Cancelled") {
+    status = `<span class="badge text-bg-dark">Cancelled</span>`;
+  }
+
+  orderListHTML += `
     <tr>
       <td class="text-secondary">${orderList[i].id}</th>
       <td class="text-secondary">${orderList[i].orderName}</td>
@@ -28,7 +28,7 @@ for(let i = 0; i < orderList.length; i++) {
         <i class="fa fa-close color-danger"></i>
       </td>
     </tr>
-  `
-};
+  `;
+}
 
-document.querySelector('tbody').innerHTML = orderListHTML;
+document.querySelector("tbody").innerHTML = orderListHTML;

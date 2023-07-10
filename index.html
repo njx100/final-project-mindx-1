@@ -28,6 +28,8 @@
     <link rel="stylesheet" href="./components/side-bar/style.css" />
     <!-- css menu row -->
     <link rel="stylesheet" href="./components/menu-row/menu-row.css" />
+    <!-- order list  -->
+    <link rel="stylesheet" href="./components/order-list/orderlist.css" />
   </head>
 
   <body>
@@ -50,13 +52,13 @@
         <ul class="sidebar-group list-unstyled px-2">
           <li class="sidebar-group-item active" data-id="dashboard">
             <a href="#top" class="text-decoration-none px-3 py-2 d-block"
-              ><i class="fa-solid fa-house px-0 px-md-2"></i
+              ><i class="fa-solid fa-house px-0"></i
               ><span class="d-none d-md-inline">Dashboard</span></a
             >
           </li>
           <li class="sidebar-group-item" data-id="menu">
             <a href="#top" class="text-decoration-none px-3 py-2 d-block"
-              ><i class="fa-solid fa-list px-0 px-md-2"></i
+              ><i class="fa-solid fa-list px-0"></i
               ><span class="d-none d-md-inline">Menu</span></a
             >
           </li>
@@ -66,7 +68,7 @@
               class="text-decoration-none px-3 py-2 d-flex justify-content-between"
             >
               <span
-                ><i class="fa-regular fa-comment px-0 px-md-2"></i
+                ><i class="fa-regular fa-comment px-0"></i
                 ><span class="d-none d-md-inline">Messages</span></span
               >
               <span
@@ -77,13 +79,13 @@
           </li>
           <li class="sidebar-group-item" data-id="services">
             <a href="#top" class="text-decoration-none px-3 py-2 d-block"
-              ><i class="fa-solid fa-envelope-open-text px-0 px-md-2"></i
+              ><i class="fa-solid fa-envelope-open-text px-0"></i
               ><span class="d-none d-md-inline">Services</span></a
             >
           </li>
           <li class="sidebar-group-item" data-id="customers">
             <a href="#top" class="text-decoration-none px-3 py-2 d-block"
-              ><i class="fa-regular fa-address-book px-0 px-md-2"></i
+              ><i class="fa-regular fa-address-book px-0"></i
               ><span class="d-none d-md-inline">Customers</span></a
             >
           </li>
@@ -93,13 +95,13 @@
         <ul class="sidebar-group list-unstyled px-2">
           <li class="list-group-item" data-id="settings">
             <a href="#top" class="text-decoration-none px-3 py-2 d-block"
-              ><i class="fa-solid fa-gear px-0 px-md-2"></i
+              ><i class="fa-solid fa-gear px-0"></i
               ><span class="d-none d-md-inline">Settings</span></a
             >
           </li>
           <li class="sidebar-group-item" data-id="notifications">
             <a href="#top" class="text-decoration-none px-3 py-2 d-block"
-              ><i class="fa-regular fa-bell px-0 px-md-2"></i
+              ><i class="fa-regular fa-bell px-0"></i
               ><span class="d-none d-md-inline">Notifications</span></a
             >
           </li>
@@ -171,7 +173,35 @@
             <div class="col-12 col-lg-6">Visit hour chart</div>
           </div>
           <div class="row">
-            <div class="col-12 order-list">Order list table</div>
+            <div class="col-12 order-list">
+              <div class="card">
+                <div class="card-body">
+                  <h4 class="card-title">ORDER LIST</h4>
+                  <div class="table-responsive">
+                    <table class="table">
+                      <thead>
+                        <tr>
+                          <th scope="col" class="text-secondary">ID</th>
+                          <th scope="col" class="text-secondary">ORDER NAME</th>
+                          <th scope="col" class="text-secondary">
+                            CUSTOMER NAME
+                          </th>
+                          <th scope="col" class="text-secondary">LOCATION</th>
+                          <th scope="col" class="text-secondary">
+                            DELIVERY TIME
+                          </th>
+                          <th scope="col" class="text-secondary">QUANTITY</th>
+                          <th scope="col" class="text-secondary">PRICE</th>
+                          <th scope="col" class="text-secondary">STATUS</th>
+                          <th scope="col" class="text-secondary">ACTION</th>
+                        </tr>
+                      </thead>
+                      <tbody></tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
         <div
@@ -229,5 +259,7 @@
     <script type="module" src="./components/side-bar/side-bar.js"></script>
     <!-- menu row -->
     <script type="module" src="./components/menu-row/menu-row.js"></script>
+    <!-- order list -->
+    <script type="module" src="./components/order-list/orderlist.js"></script>
   </body>
 </html>
