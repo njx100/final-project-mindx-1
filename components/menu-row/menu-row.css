@@ -1,11 +1,11 @@
-.menu-row {
+/* .menu-row {
   display: flex;
   justify-content: space-around;
   margin-left: 25px;
-}
+} */
 
 .card {
-  margin-right: 25px;
+  /* margin-right: 25px; */
   border: none;
   border-radius: 3%;
 }
@@ -23,6 +23,7 @@
 }
 
 img {
+  width: 100%;
   border-radius: 3%;
 }
 

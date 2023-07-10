@@ -24,7 +24,10 @@
       integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
       crossorigin="anonymous"
     />
+    <!-- css sidebar, navbar, main structure -->
     <link rel="stylesheet" href="./components/side-bar/style.css" />
+    <!-- css menu row -->
+    <link rel="stylesheet" href="./components/menu-row/menu-row.css" />
   </head>
 
   <body>
@@ -144,12 +147,13 @@
             </div>
             <div class="col-12 col-lg-6 earnings">Earnings chart</div>
           </div>
-          <div class="row menu-card">
+          <div class="row menu-row"></div>
+          <!-- <div class="row menu-card">
             <div class="col-12 col-md-6 col-lg-4 col-xl-3 d-block">Card 1</div>
             <div class="col-6 col-lg-4 col-xl-3 d-none d-md-block">Card 2</div>
             <div class="col-4 col-xl-3 col-xl-3 d-none d-lg-block">Card 3</div>
             <div class="col-3 d-none d-xl-block">Card 4</div>
-          </div>
+          </div> -->
           <div class="row">
             <div class="col-12 col-lg-6">Restaurant rating chart</div>
             <div class="col-12 col-lg-6">Visit hour chart</div>
@@ -162,7 +166,6 @@
           class="col-12 vh-100 text-center bg-light d-none"
           id="menu-content"
         >
-          <div class="m-auto fw-bold"></div>
           Menu coming soon...
         </div>
         <div
@@ -212,5 +215,7 @@
     ></script>
     <!-- app js -->
     <script type="module" src="./components/side-bar/side-bar.js"></script>
+    <!-- menu row -->
+    <script type="module" src="./components/menu-row/menu-row.js"></script>
   </body>
 </html>

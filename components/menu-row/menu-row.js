@@ -1,10 +1,10 @@
-import {menu} from './menu.js';
+import { menu } from "./menu_data.js";
 
-let menuRowHTML = ''
+let menuRowHTML = "";
 
-for(let i = 0; i < menu.length; i++) {
-      menuRowHTML += `
-    <div class="card">
+for (let i = 0; i < menu.length; i++) {
+  menuRowHTML += `
+    <div class="card col-12 col-md-6 col-xl-3 d-block">
       <div class="card-image">
         <img src="${menu[i].image}" class="card-img-top" alt="error">
       </div>
@@ -32,7 +32,7 @@ for(let i = 0; i < menu.length; i++) {
         </div>
       </div>
   </div>
-    `
+    `;
 }
 
-document.querySelector('.menu-row').innerHTML = menuRowHTML;
+document.querySelector(".menu-row").innerHTML = menuRowHTML;
