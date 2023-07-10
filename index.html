@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Drora Restaurant</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- fontawesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- Bootstrap CSS v5.2.1 -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./components/side-bar/style.css" />
+  </head>
+
+  <body>
+    <div class="main-container d-flex">
+      <div class="sidebar" id="side_nav">
+        <div class="header-box px-2 pt-3 pb-4">
+          <h1 class="fs-4 fw-bold">
+            <span class="bg-white text-dark rounded shadow px-2 ms-2 d-md-none"
+              >D</span
+            ><span class="text-white"
+              ><span class="d-none d-md-inline">Drora</span></span
+            >
+            <button
+              class="btn d-md-none d-block close-btn px-1 py-0 text-white"
+            >
+              <i class="fa-solid fa-bars"></i>
+            </button>
+          </h1>
+        </div>
+        <ul class="sidebar-group list-unstyled px-2">
+          <li class="list-group-item active" data-id="dashboard">
+            <a href="#top" class="text-decoration-none px-3 py-2 d-block"
+              ><i class="fa-solid fa-house px-2"></i>Dashboard</a
+            >
+          </li>
+          <li class="sidebar-group-item" data-id="menu">
+            <a href="#top" class="text-decoration-none px-3 py-2 d-block"
+              ><i class="fa-solid fa-list px-2"></i>Menu</a
+            >
+          </li>
+          <li class="sidebar-group-item" data-id="messages">
+            <a
+              href="#top"
+              class="text-decoration-none px-3 py-2 d-flex justify-content-between"
+            >
+              <span><i class="fa-regular fa-comment px-2"></i>Messages</span>
+              <span class="bg-warning rounded-pill text-light px-2">12</span>
+            </a>
+          </li>
+          <li class="sidebar-group-item" data-id="services">
+            <a href="#top" class="text-decoration-none px-3 py-2 d-block"
+              ><i class="fa-solid fa-envelope-open-text px-2"></i>Services</a
+            >
+          </li>
+          <li class="sidebar-group-item" data-id="customers">
+            <a href="#top" class="text-decoration-none px-3 py-2 d-block"
+              ><i class="fa-regular fa-address-book px-2"></i>Customers</a
+            >
+          </li>
+        </ul>
+        <hr class="h-color mx-3" />
+
+        <ul class="sidebar-group list-unstyled px-2">
+          <li class="list-group-item" data-id="settings">
+            <a href="#top" class="text-decoration-none px-3 py-2 d-block"
+              ><i class="fa-solid fa-gear px-2"></i>Settings</a
+            >
+          </li>
+          <li class="sidebar-group-item" data-id="notifications">
+            <a href="#top" class="text-decoration-none px-3 py-2 d-block"
+              ><i class="fa-regular fa-bell px-2"></i>Notifications</a
+            >
+          </li>
+        </ul>
+      </div>
+      <div class="content">
+        <!-- navbar -->
+        <nav class="col-12 navbar navbar-expand-lg navbar-light bg-white">
+          <div class="container-fluid">
+            <div class="d-flex justify-content-between d-md-none d-block">
+              <a class="navbar-brand fs-4" href="#">Drora</a>
+              <button class="btn px-1 py-0 open-btn">
+                <i class="fa-solid fa-bars"></i>
+              </button>
+            </div>
+
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div
+              class="collapse navbar-collapse justify-content-end"
+              id="navbarSupportedContent"
+            >
+              <ul class="navbar-nav mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#"
+                    >Profile</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+        <!-- main content -->
+        <div
+          class="col-12 vh-100 text-center bg-light d-none p-3 live"
+          id="dashboard-content"
+        >
+          <div class="row text-center">
+            <div class="col-12 col-md-4">Hi, Welcome Back</div>
+            <div class="col-12 col-md-8">Track order</div>
+          </div>
+          <div class="row g-2">
+            <div class="row col-12 col-lg-6">
+              <div class="col-12 col-md-6 order-chart">Order chart</div>
+              <div class="col-12 col-md-6 pending-chart">Pending chart</div>
+              <div class="col-12 col-md-6 revenue-chart">Revenue chart</div>
+              <div class="col-12 col-md-6 expense-chart">Expense chart</div>
+            </div>
+            <div class="col-12 col-lg-6 earnings">Earnings chart</div>
+          </div>
+          <div class="row menu-card">
+            <div class="col-12 col-md-6 col-lg-4 col-xl-3 d-block">Card 1</div>
+            <div class="col-6 col-lg-4 col-xl-3 d-none d-md-block">Card 2</div>
+            <div class="col-4 col-xl-3 col-xl-3 d-none d-lg-block">Card 3</div>
+            <div class="col-3 d-none d-xl-block">Card 4</div>
+          </div>
+          <div class="row">
+            <div class="col-12 col-lg-6">Restaurant rating chart</div>
+            <div class="col-12 col-lg-6">Visit hour chart</div>
+          </div>
+          <div class="row">
+            <div class="col-12 order-list">Order list table</div>
+          </div>
+        </div>
+        <div
+          class="col-12 vh-100 text-center bg-light d-none"
+          id="menu-content"
+        >
+          <div class="m-auto fw-bold"></div>
+          Menu coming soon...
+        </div>
+        <div
+          class="col-12 vh-100 text-center bg-light d-none"
+          id="messages-content"
+        >
+          Message coming soon...
+        </div>
+        <div
+          class="col-12 vh-100 text-center bg-light d-none"
+          id="services-content"
+        >
+          Service coming soon...
+        </div>
+        <div
+          class="col-12 vh-100 text-center bg-light d-none"
+          id="customers-content"
+        >
+          Customers coming soon...
+        </div>
+        <div
+          class="col-12 vh-100 text-center bg-light d-none"
+          id="settings-content"
+        >
+          Settings coming soon...
+        </div>
+        <div
+          class="col-12 vh-100 text-center bg-light d-none"
+          id="notifications-content"
+        >
+          Notifications coming soon...
+        </div>
+      </div>
+    </div>
+
+    <!-- Bootstrap JavaScript Libraries -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+      integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+      crossorigin="anonymous"
+    ></script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+      integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz"
+      crossorigin="anonymous"
+    ></script>
+    <!-- app js -->
+    <script type="module" src="./components/side-bar/side-bar.js"></script>
+  </body>
+</html>
