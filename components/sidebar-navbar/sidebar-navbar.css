@@ -42,6 +42,17 @@ body {
   transition: all ease-in-out 200ms;
 }
 
+.right-navbar .profile-bg {
+  background-image: url(../../images/profile_photos/pfp1.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  border: 3px solid white;
+  box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.2);
+}
+
 .content {
   min-height: 100vh;
   width: 100%;
