@@ -6,11 +6,11 @@ for (let i = 0; i < orderList.length; i++) {
   let status = orderList[i].status;
 
   if (status === "Pending") {
-    status = `<span class="badge text-bg-danger">Pending</span>`;
+    status = `<span class="badge text-bg-danger px-2 py-1 text-light">Pending</span>`;
   } else if (status === "Delivered") {
-    status = `<span class="badge text-bg-success">Delivered</span>`;
+    status = `<span class="badge text-bg-success px-2 py-1 text-light">Delivered</span>`;
   } else if (status === "Cancelled") {
-    status = `<span class="badge text-bg-dark">Cancelled</span>`;
+    status = `<span class="badge text-bg-dark px-2 py-1 text-light">Cancelled</span>`;
   }
 
   orderListHTML += `
