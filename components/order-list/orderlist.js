@@ -24,11 +24,18 @@ for (let i = 0; i < orderList.length; i++) {
       <td class="text-secondary">$${orderList[i].price}</td>
       <td class="text-secondary">${status}</td>
       <td class="text-secondary">
-        <i class="fa fa-pencil color-muted"></i>
-        <i class="fa fa-close color-danger"></i>
+      <i class="mx-2 fa fa-pencil color-muted" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Edit"></i>
+      <i class="mx-2 fa fa-close color-danger" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Close"></i>
       </td>
     </tr>
   `;
 }
 
 document.querySelector("tbody").innerHTML = orderListHTML;
+
+const tooltipTriggerList = document.querySelectorAll(
+  '[data-bs-toggle="tooltip"]'
+);
+const tooltipList = [...tooltipTriggerList].map(
+  (tooltipTriggerEl) => new bootstrap.Tooltip(tooltipTriggerEl)
+);
