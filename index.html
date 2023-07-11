@@ -128,23 +128,66 @@
                 id=""
               />
             </form>
-            <div class="right-navbar float-right me-3">
-              <button class="btn p-0">
-                <i
-                  class="fa-solid fa-expand"
-                  style="color: #000000"
-                ></i></button
-              ><button class="btn p-0">
-                <i
-                  class="fa-regular fa-envelope navbar-message"
-                  style="color: #000000"
-                ></i></button
-              ><button class="btn p-0">
-                <i class="fa-regular fa-bell" style="color: #000000"></i>
-              </button>
 
-              <button class="btn profile-bg p-0"></button>
-            </div>
+            <ul
+              class="right-navbar navbar-nav me-3 d-flex flex-row align-items-center"
+            >
+              <li class="nav-item">
+                <button class="btn p-0 d-none d-lg-inline">
+                  <i class="fa-solid fa-expand" style="color: #000000"></i>
+                </button>
+              </li>
+              <li class="nav-item">
+                <button class="btn p-0">
+                  <i
+                    class="fa-regular fa-envelope navbar-message"
+                    style="color: #000000"
+                  ></i>
+                </button>
+              </li>
+              <li class="nav-item">
+                <button class="btn p-0">
+                  <i class="fa-regular fa-bell" style="color: #000000"></i>
+                </button>
+              </li>
+              <li class="nav-item">
+                <div
+                  class="collapse navbar-collapse"
+                  id="navbarNavDarkDropdown"
+                >
+                  <ul class="navbar-nav">
+                    <li class="nav-item dropdown">
+                      <a
+                        class="nav-link dropdown-toggle d-flex align-items-center"
+                        href="#"
+                        id="navbarDarkDropdownMenuLink"
+                        role="button"
+                        data-bs-toggle="dropdown"
+                        aria-expanded="false"
+                      >
+                        <div class="profile-bg"></div>
+                      </a>
+                      <ul
+                        class="dropdown-menu dropdown-menu-end dropdown-menu-light"
+                        aria-labelledby="navbarDarkDropdownMenuLink"
+                      >
+                        <li>
+                          <a class="dropdown-item" href="#">Account</a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#">Settings</a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="./sign-in.html"
+                            >Logout</a
+                          >
+                        </li>
+                      </ul>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+            </ul>
           </div>
         </nav>
         <!-- main content -->
