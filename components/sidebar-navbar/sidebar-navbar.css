@@ -24,7 +24,7 @@ body {
 .sidebar-close-btn {
   position: absolute;
   top: 0;
-  right: -20px;
+  right: 0;
 }
 
 .btn.active.focus,
