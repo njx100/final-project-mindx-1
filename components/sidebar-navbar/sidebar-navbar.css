@@ -2,9 +2,44 @@ body {
   background: #eee;
 }
 
+.main-container {
+  position: relative;
+}
+
+.sidebar-container {
+  height: 100vh;
+}
+
 #side_nav {
   background: rgb(17, 17, 17);
   min-width: 250px;
+  max-width: 250px;
+  transition: all linear 250ms;
+}
+
+.header-box {
+  position: relative;
+}
+
+.sidebar-close-btn {
+  position: absolute;
+  top: 0;
+  right: -20px;
+}
+
+.btn.active.focus,
+.btn.active:focus,
+.btn.focus,
+.btn:active.focus,
+.btn:active:focus,
+.btn:focus {
+  /* outline: 0 !important; */
+  border: none;
+}
+
+.btn:hover {
+  transform: scale(1.1);
+  transition: all ease-in-out 200ms;
 }
 
 .content {
@@ -49,8 +84,20 @@ hr.h-color {
   background: #f9fafd;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   #side_nav {
-    min-width: 70px;
+    margin-left: -250px;
+    position: fixed;
+    min-height: 100vh;
+    z-index: 1;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  #side_nav {
+    margin-left: 0px !important;
+    position: static;
+    min-height: 100vh;
+    z-index: 1;
   }
 }

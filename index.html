@@ -39,30 +39,28 @@
     <div class="main-container d-flex">
       <div class="sidebar" id="side_nav">
         <div class="header-box px-2 pt-3 pb-4">
-          <h1 class="fs-4 fw-bold">
-            <span class="bg-white text-dark rounded shadow px-2 ms-2 d-md-none"
+          <h1 class="fs-4 my-3 mx-1 fw-bold">
+            <span class="bg-white text-dark rounded shadow px-1 ms-1 fs-1"
               >D</span
             ><span class="text-white"
-              ><span class="d-none d-md-inline">Drora</span></span
+              ><span class="d-inline fs-1">rora</span></span
             >
-            <button
-              class="btn d-md-none d-block close-btn px-1 py-0 text-white"
-            >
-              <i class="fa-solid fa-bars"></i>
-            </button>
           </h1>
+          <button class="btn sidebar-close-btn d-md-none">
+            <i class="fa-solid fa-xmark fa-2x" style="color: #ffffff"></i>
+          </button>
         </div>
         <ul class="sidebar-group list-unstyled px-2">
           <li class="sidebar-group-item active" data-id="dashboard">
             <a href="#top" class="text-decoration-none px-3 py-2 d-block"
               ><i class="fa-solid fa-house px-0"></i
-              ><span class="d-none d-md-inline">Dashboard</span></a
+              ><span class="">Dashboard</span></a
             >
           </li>
           <li class="sidebar-group-item" data-id="menu">
             <a href="#top" class="text-decoration-none px-3 py-2 d-block"
               ><i class="fa-solid fa-list px-0"></i
-              ><span class="d-none d-md-inline">Menu</span></a
+              ><span class="">Menu</span></a
             >
           </li>
           <li class="sidebar-group-item" data-id="messages">
@@ -72,24 +70,21 @@
             >
               <span
                 ><i class="fa-regular fa-comment px-0"></i
-                ><span class="d-none d-md-inline">Messages</span></span
+                ><span class="">Messages</span></span
               >
-              <span
-                class="bg-warning rounded-pill text-light px-2 d-none d-md-inline"
-                >12</span
-              >
+              <span class="bg-warning rounded-pill text-light px-2">12</span>
             </a>
           </li>
           <li class="sidebar-group-item" data-id="services">
             <a href="#top" class="text-decoration-none px-3 py-2 d-block"
               ><i class="fa-solid fa-envelope-open-text px-0"></i
-              ><span class="d-none d-md-inline">Services</span></a
+              ><span class="">Services</span></a
             >
           </li>
           <li class="sidebar-group-item" data-id="customers">
             <a href="#top" class="text-decoration-none px-3 py-2 d-block"
               ><i class="fa-regular fa-address-book px-0"></i
-              ><span class="d-none d-md-inline">Customers</span></a
+              ><span class="">Customers</span></a
             >
           </li>
         </ul>
@@ -99,56 +94,30 @@
           <li class="list-group-item" data-id="settings">
             <a href="#top" class="text-decoration-none px-3 py-2 d-block"
               ><i class="fa-solid fa-gear px-0"></i
-              ><span class="d-none d-md-inline">Settings</span></a
+              ><span class="">Settings</span></a
             >
           </li>
           <li class="sidebar-group-item" data-id="notifications">
             <a href="#top" class="text-decoration-none px-3 py-2 d-block"
               ><i class="fa-regular fa-bell px-0"></i
-              ><span class="d-none d-md-inline">Notifications</span></a
+              ><span class="">Notifications</span></a
             >
           </li>
         </ul>
       </div>
+
       <div class="content">
         <!-- navbar -->
-        <nav class="col-12 navbar navbar-expand-lg navbar-light bg-white">
+        <nav class="col-12 py-4 navbar navbar-expand-lg navbar-light bg-white">
           <div class="container-fluid">
-            <div class="d-flex justify-content-between d-md-none d-block">
-              <a class="navbar-brand fs-4" href="#">Drora</a>
-              <button class="btn px-1 py-0 open-btn">
-                <i class="fa-solid fa-bars"></i>
-              </button>
-            </div>
-
-            <button
-              class="navbar-toggler"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#navbarSupportedContent"
-              aria-controls="navbarSupportedContent"
-              aria-expanded="false"
-              aria-label="Toggle navigation"
-            >
-              <span class="navbar-toggler-icon"></span>
+            <button class="btn px-2 py-0 text-center open-btn d-md-none">
+              <i class="fa-solid fa-bars fa-2x"></i>
             </button>
-            <div
-              class="collapse navbar-collapse justify-content-end"
-              id="navbarSupportedContent"
-            >
-              <ul class="navbar-nav mb-2 mb-lg-0">
-                <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="#"
-                    >Profile</a
-                  >
-                </li>
-              </ul>
-            </div>
           </div>
         </nav>
         <!-- main content -->
         <div
-          class="col-12 vh-100 text-center bg-light d-none p-3 live"
+          class="col-12 v-100 text-center bg-light d-none p-3 live"
           id="dashboard-content"
         >
           <div class="row text-center">
@@ -164,7 +133,7 @@
             </div>
             <div class="col-12 col-lg-6 earnings">Earnings chart</div>
           </div>
-          <div class="row menu-row"></div>
+          <div class="row menu-row px-2"></div>
           <!-- <div class="row menu-card">
             <div class="col-12 col-md-6 col-lg-4 col-xl-3 d-block">Card 1</div>
             <div class="col-6 col-lg-4 col-xl-3 d-none d-md-block">Card 2</div>

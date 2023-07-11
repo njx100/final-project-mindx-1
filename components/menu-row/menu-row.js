@@ -14,7 +14,7 @@ for (let i = 0; i < menu.length; i++) {
           <div class="d-flex justify-content-between align-items-center">
             <h5 class="card-title">${menu[i].name}</h5>
             <h4>
-              <span class="badge badge-primary">$${menu[i].price}</span>
+              <span class="badge badge-primary p-1 fw-bold">$${menu[i].price}</span>
             </h4>
           </div>
 
