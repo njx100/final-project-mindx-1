@@ -25,7 +25,10 @@
       crossorigin="anonymous"
     />
     <!-- css sidebar, navbar, main structure -->
-    <link rel="stylesheet" href="./components/side-bar/sidebar-navbar.css" />
+    <link
+      rel="stylesheet"
+      href="./components/sidebar-navbar/sidebar-navbar.css"
+    />
     <!-- css menu row -->
     <link rel="stylesheet" href="./components/menu-row/menu-row.css" />
     <!-- order list  -->
@@ -149,7 +152,7 @@
           id="dashboard-content"
         >
           <div class="row text-center">
-            <div class="col-12 col-md-4">Hi, Welcome Back</div>
+            <div class="col-12 col-md-4" id="welcome"></div>
             <div class="col-12 col-md-8">Track order</div>
           </div>
           <div class="row g-2">
@@ -258,8 +261,10 @@
     <!-- sidebar and navbar -->
     <script
       type="module"
-      src="./components/side-bar/sidebar-navbar.js"
+      src="./components/sidebar-navbar/sidebar-navbar.js"
     ></script>
+    <!-- welcome -->
+    <script src="./components/welcome/welcome.js"></script>
     <!-- menu row -->
     <script type="module" src="./components/menu-row/menu-row.js"></script>
     <!-- order list -->
