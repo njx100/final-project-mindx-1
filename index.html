@@ -31,6 +31,11 @@
     />
     <!-- css menu row -->
     <link rel="stylesheet" href="./components/menu-row/menu-row.css" />
+    <!-- earning chart group -->
+    <link
+      rel="stylesheet"
+      href="./components/earning-chart-group/earning-chart-group.css"
+    />
     <!-- order list  -->
     <link rel="stylesheet" href="./components/order-list/orderlist.css" />
   </head>
@@ -199,22 +204,105 @@
             <div class="col-12 col-md-4" id="welcome"></div>
             <div class="col-12 col-md-8">Track order</div>
           </div>
-          <div class="row g-2">
-            <div class="row col-12 col-lg-6">
-              <div class="col-12 col-md-6 order-chart">Order chart</div>
-              <div class="col-12 col-md-6 pending-chart">Pending chart</div>
-              <div class="col-12 col-md-6 revenue-chart">Revenue chart</div>
-              <div class="col-12 col-md-6 expense-chart">Expense chart</div>
+          <!-- earning chart group -->
+
+          <div class="row mb-4">
+            <div class="row">
+              <!-- Chart Left -->
+              <div class="col-xl-6 col-xxl-6">
+                <div class="row">
+                  <!-- Order -->
+                  <div class="col-sm-6 col-xxl-6 col-xl-6">
+                    <div class="cart rounded-1 mt-2 chart-bg--white">
+                      <div class="card-body pt-3">
+                        <div class="row justify-content-between">
+                          <div class="col-6">
+                            <h5 class="text-muted mb-3">Order</h5>
+                          </div>
+                          <div class="total col-6"></div>
+                        </div>
+                        <div class="percent_1 text-start"></div>
+                      </div>
+                      <div class="chart-wrapper">
+                        <div id="chart_order" class="home_chart_widget"></div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- End Order -->
+                  <!-- Pending -->
+                  <div class="col-sm-6 col-xxl-6 col-xl-6">
+                    <div class="cart rounded-1 mt-2 chart-bg--white">
+                      <div class="card-body pt-3">
+                        <div class="row justify-content-between">
+                          <div class="col-6">
+                            <h5 class="text-muted mb-3">Pending</h5>
+                          </div>
+                          <div class="total col-6"></div>
+                        </div>
+                        <div class="percent_2 text-start"></div>
+                      </div>
+                      <div class="chart-wrapper">
+                        <div id="chart_pending" class="home_chart_widget"></div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- End Pending -->
+                  <!-- Revenue -->
+                  <div class="col-sm-6 col-xxl-6 col-xl-6">
+                    <div class="cart rounded-1 mt-2 chart-bg--white">
+                      <div class="card-body pt-3">
+                        <div class="row justify-content-between">
+                          <div class="col-6">
+                            <h5 class="text-muted mb-3">Revenue</h5>
+                          </div>
+                          <div class="total col-6"></div>
+                        </div>
+                        <div class="percent_3 text-start"></div>
+                      </div>
+                      <div class="chart-wrapper">
+                        <div id="chart_revenue" class="home_chart_widget"></div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- End Revenue -->
+                  <!-- Expense -->
+                  <div class="col-sm-6 col-xxl-6 col-xl-6">
+                    <div class="cart rounded-1 mt-2 chart-bg--white">
+                      <div class="card-body pt-3">
+                        <div class="row justify-content-between">
+                          <div class="col-6">
+                            <h5 class="text-muted mb-3">Expense</h5>
+                          </div>
+                          <div class="total col-6"></div>
+                        </div>
+                        <div class="percent_4 text-start"></div>
+                      </div>
+                      <div class="chart-wrapper">
+                        <div id="chart_expense" class="home_chart_widget"></div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- End Expense -->
+                </div>
+
+                <!-- End Chart Left -->
+              </div>
+
+              <!-- Chart Right -->
+              <!-- earnings chart -->
+              <div class="col-xl-6 col-xxl-6 pt-2">
+                <div class="card rounded-1">
+                  <div class="card-body body-height">
+                    <div id="chart_earnings" class="chart-height"></div>
+                  </div>
+                </div>
+                <!-- End Chart Right -->
+              </div>
             </div>
-            <div class="col-12 col-lg-6 earnings">Earnings chart</div>
+            
           </div>
           <div class="row menu-row px-2"></div>
-          <!-- <div class="row menu-card">
-            <div class="col-12 col-md-6 col-lg-4 col-xl-3 d-block">Card 1</div>
-            <div class="col-6 col-lg-4 col-xl-3 d-none d-md-block">Card 2</div>
-            <div class="col-4 col-xl-3 col-xl-3 d-none d-lg-block">Card 3</div>
-            <div class="col-3 d-none d-xl-block">Card 4</div>
-          </div> -->
+          
           <!-- restaurant-rating -->
 
           <!-- order start -->
@@ -241,36 +329,7 @@
               </div>
             </div>
           </div>
-          <!-- <div class="row">
-            <div class="col-12 order-list">
-              <div class="card">
-                <div class="card-body">
-                  <h4 class="card-title">ORDER LIST</h4>
-                  <div class="table-responsive">
-                    <table class="table">
-                      <thead>
-                        <tr>
-                          <th scope="col" class="text-secondary">ID</th>
-                          <th scope="col" class="text-secondary">ORDER NAME</th>
-                          <th scope="col" class="text-secondary">
-                            CUSTOMER NAME
-                          </th>
-                          <th scope="col" class="text-secondary">LOCATION</th>
-                          <th scope="col" class="text-secondary">
-                            DELIVERY TIME
-                          </th>
-                          <th scope="col" class="text-secondary">QUANTITY</th>
-                          <th scope="col" class="text-secondary">PRICE</th>
-                          <th scope="col" class="text-secondary">STATUS</th>
-                          <th scope="col" class="text-secondary">ACTION</th>
-                        </tr>
-                      </thead>
-                      <tbody></tbody>
-                    </table>
-                  </div>
-                </div>
-              </div>
-            </div>
+          
           </div> -->
           <!-- order list end -->
         </div>
@@ -327,6 +386,10 @@
     ></script>
     <!-- chart.js Libraries -->
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <!-- hightchart.js -->
+    <script src="https://code.highcharts.com/highcharts.js"></script>
+    <script src="https://code.highcharts.com/modules/export-data.js"></script>
+    <script src="https://code.highcharts.com/modules/accessibility.js"></script>
     <!-- sidebar and navbar -->
     <script
       type="module"
@@ -334,6 +397,11 @@
     ></script>
     <!-- welcome -->
     <script src="./components/welcome/welcome.js"></script>
+    <!-- earning chart group -->
+    <script
+      type="module"
+      src="./components/earning-chart-group/earning-chart-group.js"
+    ></script>
     <!-- menu row -->
     <script type="module" src="./components/menu-row/menu-row.js"></script>
     <!-- order list -->

@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Charts</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS v5.2.1 -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
+      crossorigin="anonymous"
+    />
+    <!-- icon -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- style -->
+    <link rel="stylesheet" href="chart.css" />
+
+    <!-- chart -->
+    <script src="https://code.highcharts.com/highcharts.js"></script>
+    <script src="https://code.highcharts.com/modules/export-data.js"></script>
+    <script src="https://code.highcharts.com/modules/accessibility.js"></script>
+  </head>
+
+  <body>
+    <header>
+      <!-- place navbar here -->
+    </header>
+    <main>
+      <!-- Chart -->
+      <section class="container py-3">
+        <div class="row">
+          <!-- Chart Left -->
+          <div class="col-xl-6 col-xxl-6">
+            <div class="row">
+              <!-- Order -->
+              <div class="col-sm-6 col-xxl-6 col-xl-6">
+                <div class="cart rounded-1 mt-2 chart-bg--white">
+                  <div class="card-body pt-3">
+                    <div class="row justify-content-between">
+                      <div class="col-auto">
+                        <h5 class="text-muted mb-3">Order</h5>
+                      </div>
+                      <div class="total col-auto"></div>
+                    </div>
+                    <div class="percent_1 text-start"></div>
+                  </div>
+                  <div class="chart-wrapper">
+                    <div id="chart_order" class="home_chart_widget"></div>
+                  </div>
+                </div>
+              </div>
+              <!-- End Order -->
+              <!-- Pending -->
+              <div class="col-sm-6 col-xxl-6 col-xl-6">
+                <div class="cart rounded-1 mt-2 chart-bg--white">
+                  <div class="card-body pt-3">
+                    <div class="row justify-content-between">
+                      <div class="col-auto">
+                        <h5 class="text-muted mb-3">Pending</h5>
+                      </div>
+                      <div class="total col-auto"></div>
+                    </div>
+                    <div class="percent_2 text-start"></div>
+                  </div>
+                  <div class="chart-wrapper">
+                    <div id="chart_pending" class="home_chart_widget"></div>
+                  </div>
+                </div>
+              </div>
+              <!-- End Pending -->
+              <!-- Revenue -->
+              <div class="col-sm-6 col-xxl-6 col-xl-6">
+                <div class="cart rounded-1 mt-2 chart-bg--white">
+                  <div class="card-body pt-3">
+                    <div class="row justify-content-between">
+                      <div class="col-auto">
+                        <h5 class="text-muted mb-3">Revenue</h5>
+                      </div>
+                      <div class="total col-auto"></div>
+                    </div>
+                    <div class="percent_3 text-start"></div>
+                  </div>
+                  <div class="chart-wrapper">
+                    <div id="chart_revenue" class="home_chart_widget"></div>
+                  </div>
+                </div>
+              </div>
+              <!-- End Revenue -->
+              <!-- Expense -->
+              <div class="col-sm-6 col-xxl-6 col-xl-6">
+                <div class="cart rounded-1 mt-2 chart-bg--white">
+                  <div class="card-body pt-3">
+                    <div class="row justify-content-between">
+                      <div class="col-auto">
+                        <h5 class="text-muted mb-3">Expense</h5>
+                      </div>
+                      <div class="total col-auto"></div>
+                    </div>
+                    <div class="percent_4 text-start"></div>
+                  </div>
+                  <div class="chart-wrapper">
+                    <div id="chart_expense" class="home_chart_widget"></div>
+                  </div>
+                </div>
+              </div>
+              <!-- End Expense -->
+            </div>
+
+            <!-- End Chart Left -->
+          </div>
+
+          <!-- Chart Right -->
+          <div class="col-xl-6 col-xxl-6 pt-2">
+            <div class="card rounded-1">
+              <div class="card-body body-height">
+                <div id="chart_earnings" class="chart-height"></div>
+              </div>
+            </div>
+            <!-- End Chart Right -->
+          </div>
+        </div>
+      </section>
+      <!-- end chart -->
+    </main>
+    <footer>
+      <!-- place footer here -->
+    </footer>
+    <!-- Bootstrap JavaScript Libraries -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+      integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+      crossorigin="anonymous"
+    ></script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+      integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz"
+      crossorigin="anonymous"
+    ></script>
+    <!-- <script src="./dataindex.js"></script> -->
+    <script src="./chart.js"></script>
+  </body>
+</html>

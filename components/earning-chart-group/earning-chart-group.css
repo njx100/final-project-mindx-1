@@ -1,0 +1,19 @@
+
+.home_chart_widget{
+    height: 6rem;
+}
+.body-height{
+    height: 30.5rem;
+}
+.chart-height{
+    height: 28rem;
+}
+.increase{
+    color: #95cc47;
+}
+.decrease{
+    color: #f05050;
+}
+.chart-bg--white{
+    background-color: #fff;
+}
