@@ -1,0 +1,28 @@
+.bg-food {
+  background: #ed0c0a !important;
+}
+
+.bg-service {
+  background: #40c4ff !important;
+}
+
+.bg-waiting_time {
+  background: #95cc46 !important;
+}
+
+.bg-others {
+  background: #0f0f0f !important;
+}
+
+.selected-tab {
+  border-bottom: 2px solid rgba(149, 204, 71, 0.7) !important;
+}
+
+.graph-tab:hover,
+.reviews-tab:hover,
+.graph-tab:active,
+.reviews-tab:active {
+  border: 2px solid rgba(149, 204, 71, 0) !important;
+  border-bottom: 2px solid rgba(149, 204, 71, 0.7) !important;
+  transition: border-bottom-color ease 150ms;
+}
