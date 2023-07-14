@@ -26,3 +26,8 @@
   border-bottom: 2px solid rgba(149, 204, 71, 0.7) !important;
   transition: border-bottom-color ease 150ms;
 }
+
+.media img {
+  border-radius: 0;
+  width: 50px;
+}

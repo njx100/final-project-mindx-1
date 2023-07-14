@@ -10,160 +10,18 @@
       integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
       crossorigin="anonymous"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link rel="stylesheet" href="./restaurant-rating.css" />
     <title>Restaurant rating</title>
   </head>
   <body>
-    <div class="restaurant-rating">
-      <div class="card">
-        <div class="card-header bg-white border-0">
-          <h4 class="mx-3 mt-3">RESTAURANT RATING</h4>
-          <ul
-            class="nav nav-tabs card-header-tabs justify-content-end align-items-center me-5"
-          >
-            <li class="nav-item rounded">
-              <a class="nav-link graph-tab text-dark selected-tab" href="#"
-                >Graph</a
-              >
-            </li>
-            <li class="nav-item rounded">
-              <a class="nav-link reviews-tab text-dark" href="#">Reviews</a>
-            </li>
-          </ul>
-        </div>
-        <div class="card-body">
-          <div class="graph-tab-content">
-            <div class="row justify-content-between align-items-center px-5">
-              <div class="col-12 col-md-6 my-5 mx-auto align-items-center">
-                <canvas id="rating-doughnut-chart"></canvas>
-              </div>
-              <div
-                class="col-12 col-md-5 progress-rating-chart justify-content-between"
-              >
-                <div>
-                  <div class="row justify-content-between">
-                    <p class="col-auto">Food</p>
-                    <p class="col-auto"><b class="text-dark">220</b> (10%)</p>
-                  </div>
-                  <div class="progress">
-                    <div
-                      class="progress-bar rounded-pill bg-food"
-                      style="width: 10%"
-                      role="progressbar"
-                    ></div>
-                  </div>
-                </div>
-                <div class="mt-4">
-                  <div class="row justify-content-between">
-                    <p class="col-auto">Service</p>
-                    <p class="col-auto"><b class="text-dark">220</b> (10%)</p>
-                  </div>
-                  <div class="progress">
-                    <div
-                      class="progress-bar rounded-pill bg-service"
-                      style="width: 50%"
-                      role="progressbar"
-                    ></div>
-                  </div>
-                </div>
-                <div class="mt-4">
-                  <div class="row justify-content-between">
-                    <p class="col-auto">Waiting Time</p>
-                    <p class="col-auto"><b class="text-dark">220</b> (10%)</p>
-                  </div>
-                  <div class="progress">
-                    <div
-                      class="progress-bar rounded-pill bg-waiting_time"
-                      style="width: 50%"
-                      role="progressbar"
-                    ></div>
-                  </div>
-                </div>
-                <div class="mt-4">
-                  <div class="row justify-content-between">
-                    <p class="col-auto">Others</p>
-                    <p class="col-auto"><b class="text-dark">220</b> (10%)</p>
-                  </div>
-                  <div class="progress">
-                    <div
-                      class="progress-bar rounded-pill bg-others"
-                      style="width: 50%"
-                      role="progressbar"
-                    ></div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- reviews tab content -->
-          <div
-            class="container-fluid d-flex flex-column flex-fill reviews-tab-content"
-          >
-            <div class="row">
-              <div class="row col-10">
-                <div class="col-auto media">
-                  <img src="./image/1.jpg" alt="" />
-                </div>
-                <div class="col media-body ml-4 float-start">
-                  <strong>Antony Jonus</strong>
-                  <p>
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                    Temporibus, molestiae fugiat architecto voluptas dolor
-                  </p>
-                </div>
-              </div>
-              <div class="col-2 text-end render-starts">⭐⭐⭐⭐⭐</div>
-            </div>
-            <div class="row">
-              <div class="row col-10">
-                <div class="col-auto media">
-                  <img src="./image/1.jpg" alt="" />
-                </div>
-                <div class="col media-body ml-4 float-start">
-                  <strong>Antony Jonus</strong>
-                  <p>
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                    Temporibus, molestiae fugiat architecto voluptas dolor
-                  </p>
-                </div>
-              </div>
-              <div class="col-2 text-end render-starts">⭐⭐⭐⭐⭐</div>
-            </div>
-            <div class="row">
-              <div class="row col-10">
-                <div class="col-auto media">
-                  <img src="./image/1.jpg" alt="" />
-                </div>
-                <div class="col media-body ml-4 float-start">
-                  <strong>Antony Jonus</strong>
-                  <p>
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                    Temporibus, molestiae fugiat architecto voluptas dolor
-                  </p>
-                </div>
-              </div>
-              <div class="col-2 text-end render-starts">⭐⭐⭐⭐⭐</div>
-            </div>
-            <div class="row">
-              <div class="row col-10">
-                <div class="col-auto media">
-                  <img src="./image/1.jpg" alt="" />
-                </div>
-                <div class="col media-body ml-4 float-start">
-                  <strong>Antony Jonus</strong>
-                  <p>
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                    Temporibus, molestiae fugiat architecto voluptas dolor
-                  </p>
-                </div>
-              </div>
-              <div class="col-2 text-end render-starts">⭐⭐⭐⭐⭐</div>
-            </div>
-          </div>
-          <!-- reviews tab above -->
-        </div>
-      </div>
-    </div>
+    <div class="restaurant-rating"></div>
 
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script

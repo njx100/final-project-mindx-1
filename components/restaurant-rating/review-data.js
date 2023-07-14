@@ -16,7 +16,7 @@ export const reviewData = [
   {
     img: "https://images.unsplash.com/photo-1552162864-987ac51d1177?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=880&q=80",
     name: "Shacobia A",
-    rating: 5,
+    rating: 4,
     review: "Yummy food 😋 😋 great staff 👍👍 I highly recommend it 👌 👌",
   },
   {
