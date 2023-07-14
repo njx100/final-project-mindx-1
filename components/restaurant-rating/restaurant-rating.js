@@ -123,70 +123,90 @@ const restaurantRatingHTML = `<div class="card">
   <div
     class="container-fluid flex-column flex-fill reviews-tab-content"
   >
-    <div class="row">
-      <div class="row col-10">
-        <div class="col-auto media">
-          <img src="${review_0.img}" width="50" alt="" />
+  <div class="row">
+  <div class="row col-12 justify-content-between">
+    <div class="col-auto media">
+      <img src="${review_0.img}" alt="" />
+    </div>
+    <div class="col media-body ml-4 text-start text-secondary">
+      <div class="row">
+        <div class="row">
+          <strong class="col-auto">${review_0.name}</strong>
+          <div class="col"></div>
+          <div class="col-auto text-end render-stars">
+            ${renderStars(review_0.rating)}
+          </div>
         </div>
-        <div class="col media-body ml-4 text-start text-secondary">
-          <strong>${review_0.name}</strong>
-          <p >
-          ${review_0.review}
-          </p>
+        <p class="col-12">${review_0.review}</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="row">
+  <div class="row col-12 justify-content-between">
+    <div class="col-auto media">
+      <img src="${review_1.img}" alt="" />
+    </div>
+    <div class="col media-body ml-4 text-start text-secondary">
+      <div class="row">
+        <div class="row">
+          <strong class="col-auto">${review_1.name}</strong>
+          <div class="col"></div>
+          <div class="col-auto text-end render-stars">
+            ${renderStars(review_1.rating)}
+          </div>
+        </div>
+        <p class="col-12">${review_1.review}</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="row">
+  <div class="row col-12 justify-content-between">
+    <div class="col-auto media">
+      <img src="${review_2.img}" alt="" />
+    </div>
+    <div class="col media-body ml-4 text-start text-secondary">
+      <div class="row">
+        <div class="row">
+          <strong class="col-auto">${review_2.name}</strong>
+          <div class="col"></div>
+          <div class="col-auto text-end render-stars">
+            ${renderStars(review_2.rating)}
+          </div>
+        </div>
+        <p class="col-12">${review_2.review}</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="row">
+<div class="row col-12 justify-content-between">
+  <div class="col-auto media">
+    <img src="${review_3.img}" alt="" />
+  </div>
+  <div class="col media-body ml-4 text-start text-secondary">
+    <div class="row">
+      <div class="row">
+        <strong class="col-auto">${review_3.name}</strong>
+        <div class="col"></div>
+        <div class="col-auto text-end render-stars">
+          ${renderStars(review_3.rating)}
         </div>
       </div>
-      <div class="col-auto text-end render-stars">${renderStars(
-        review_0.rating
-      )}</div>
+      <p class="col-12">${review_3.review}</p>
     </div>
-    <div class="row">
-      <div class="row col-10">
-        <div class="col-auto media">
-          <img src="${review_1.img}" width="50" alt="" />
-        </div>
-        <div class="col media-body ml-4 text-start text-secondary">
-          <strong>${review_1.name}</strong>
-          <p>
-            ${review_1.review}
-          </p>
-        </div>
-      </div>
-      <div class="col-auto text-end render-stars">${renderStars(
-        review_1.rating
-      )}</div>
-    </div>
-    <div class="row">
-      <div class="row col-10">
-        <div class="col-auto media">
-          <img src="${review_2.img}" width="50" alt="" />
-        </div>
-        <div class="col media-body ml-4 text-start text-secondary">
-          <strong>${review_2.name}</strong>
-          <p>
-          ${review_2.review}
-          </p>
-        </div>
-      </div>
-      <div class="col-auto text-end render-stars">${renderStars(
-        review_2.rating
-      )}</div>
-    </div>
-    <div class="row">
-      <div class="row col-10">
-        <div class="col-auto media">
-          <img src="${review_3.img}" width="50" alt="" />
-        </div>
-        <div class="col media-body ml-4 text-start text-secondary">
-          <strong>${review_3.name}</strong>
-          <p>
-          ${review_3.review}
-          </p>
-        </div>
-      </div>
-      <div class="col-auto text-end render-stars">${renderStars(
-        review_3.rating
-      )}</div>
-    </div>
+  </div>
+</div>
+</div>
+
+  
   </div>
   <!-- reviews tab above -->
 </div>
