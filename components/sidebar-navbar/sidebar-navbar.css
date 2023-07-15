@@ -98,8 +98,9 @@ hr.h-color {
 @media screen and (max-width: 991px) {
   #side_nav {
     margin-left: -250px;
-    position: fixed;
+    position: sticky;
     min-height: 100vh;
+    overflow-y: scroll;
     z-index: 1;
   }
 }
