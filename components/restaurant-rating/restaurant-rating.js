@@ -130,9 +130,9 @@ const restaurantRatingHTML = `<div class="card">
     <div class="col media-body ml-4 text-start text-secondary">
       <div class="row">
         <div class="row">
-          <strong class="col-auto">${review_0.name}</strong>
-          <div class="col"></div>
-          <div class="col-auto text-end render-stars">
+          <strong class="col-12 col-sm-auto">${review_0.name}</strong>
+          <div class="col d-none d-sm-inline"></div>
+          <div class="col-12 col-sm-auto text-start text-sm-end render-stars">
             ${renderStars(review_0.rating)}
           </div>
         </div>
@@ -151,9 +151,9 @@ const restaurantRatingHTML = `<div class="card">
     <div class="col media-body ml-4 text-start text-secondary">
       <div class="row">
         <div class="row">
-          <strong class="col-auto">${review_1.name}</strong>
-          <div class="col"></div>
-          <div class="col-auto text-end render-stars">
+          <strong class="col-12 col-sm-auto">${review_1.name}</strong>
+          <div class="col d-none d-sm-inline"></div>
+          <div class="col-12 col-sm-auto text-start text-sm-end render-stars">
             ${renderStars(review_1.rating)}
           </div>
         </div>
@@ -172,9 +172,9 @@ const restaurantRatingHTML = `<div class="card">
     <div class="col media-body ml-4 text-start text-secondary">
       <div class="row">
         <div class="row">
-          <strong class="col-auto">${review_2.name}</strong>
-          <div class="col"></div>
-          <div class="col-auto text-end render-stars">
+          <strong class="col-12 col-sm-auto">${review_2.name}</strong>
+          <div class="col d-none d-sm-inline"></div>
+          <div class="col-12 col-sm-auto text-start text-sm-end render-stars">
             ${renderStars(review_2.rating)}
           </div>
         </div>
@@ -193,9 +193,9 @@ const restaurantRatingHTML = `<div class="card">
   <div class="col media-body ml-4 text-start text-secondary">
     <div class="row">
       <div class="row">
-        <strong class="col-auto">${review_3.name}</strong>
-        <div class="col"></div>
-        <div class="col-auto text-end render-stars">
+        <strong class="col-12 col-sm-auto">${review_3.name}</strong>
+        <div class="col d-none d-sm-inline"></div>
+        <div class="col-12 col-sm-auto text-start text-sm-end render-stars">
           ${renderStars(review_3.rating)}
         </div>
       </div>
