@@ -26,8 +26,6 @@ const renderStars = (num) => {
   return starArr.join("");
 };
 
-console.log(renderStars(3));
-
 const restaurantRatingHTML = `<div class="card">
 <div class="card-header bg-white border-0">
   <h4 class="mx-3 mt-3 text-start h5">RESTAURANT RATING</h4>
