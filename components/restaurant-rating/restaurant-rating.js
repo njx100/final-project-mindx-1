@@ -11,6 +11,7 @@ let total = food + service + waiting_time + others;
 
 // render html element
 const restaurantRatingEl = document.querySelector(".restaurant-rating");
+// render stars function
 const renderStars = (num) => {
   let starArr = [];
   let star = `<span><i class="fa-solid fa-star" style="color: #6c757d;"></i></span>`;
@@ -31,7 +32,7 @@ const restaurantRatingHTML = `<div class="card">
 <div class="card-header bg-white border-0">
   <h4 class="mx-3 mt-3 text-start h5">RESTAURANT RATING</h4>
   <ul
-    class="nav nav-tabs card-header-tabs justify-content-end align-items-center me-5"
+    class="nav nav-tabs card-header-tabs justify-content-end align-items-center me-1 me-lg-5"
   >
     <li class="nav-item rounded">
       <a class="nav-link graph-tab text-dark selected-tab"
@@ -46,7 +47,7 @@ const restaurantRatingHTML = `<div class="card">
 <div class="card-body">
   <div class="graph-tab-content">
     <div class="row justify-content-between align-items-center px-5">
-      <div class="col-12 col-md-6 my-5 mx-auto align-items-center">
+      <div class="col-12 col-md-6 my-4 mx-auto justify-content-center align-items-center position-relative">
         <canvas id="rating-doughnut-chart"></canvas>
       </div>
       <div
@@ -55,7 +56,7 @@ const restaurantRatingHTML = `<div class="card">
         <div>
           <div class="row justify-content-between">
             <p class="col-auto">Food</p>
-            <p class="col-auto"><b class="text-dark">${food}</b> (${(
+            <p class="col-auto"><b class="text-dark">${food} reviews</b> (${(
   (food / total) *
   100
 ).toFixed(2)}%)</p>
@@ -71,7 +72,7 @@ const restaurantRatingHTML = `<div class="card">
         <div class="mt-4">
           <div class="row justify-content-between">
             <p class="col-auto">Service</p>
-            <p class="col-auto"><b class="text-dark">${service}</b> (${(
+            <p class="col-auto"><b class="text-dark">${service} reviews</b> (${(
   (service / total) *
   100
 ).toFixed(2)}%)</p>
@@ -87,7 +88,7 @@ const restaurantRatingHTML = `<div class="card">
         <div class="mt-4">
           <div class="row justify-content-between">
             <p class="col-auto">Waiting Time</p>
-            <p class="col-auto"><b class="text-dark">${waiting_time}</b> (${(
+            <p class="col-auto"><b class="text-dark">${waiting_time} reviews</b> (${(
   (waiting_time / total) *
   100
 ).toFixed(2)}%)</p>
@@ -103,7 +104,7 @@ const restaurantRatingHTML = `<div class="card">
         <div class="mt-4">
           <div class="row justify-content-between">
             <p class="col-auto">Others</p>
-            <p class="col-auto"><b class="text-dark">${others}</b> (${(
+            <p class="col-auto"><b class="text-dark">${others} reviews</b> (${(
   (others / total) *
   100
 ).toFixed(2)}%)</p>
