@@ -325,18 +325,23 @@
           </div>
           <!-- menu row -->
           <div class="container-fluid my-3">
-            <div class="row menu-row"></div>
+            <div class="row menu-row g-1"></div>
           </div>
           <!-- restaurant-rating and visit hours container -->
-          <div class="row">
+          <div class="row align-items-top p-0 px-2">
             <!-- restaurant-rating -->
-            <div class="col-12 col-xxl-6 my-3 restaurant-rating"></div>
+            <div class="col-12 col-xxl-6 restaurant-rating bg-white container-fluid"></div>
             <!-- Visit hours -->
-            <div class="col-12 col-xxl-6 visit-hour">Visit hour</div>
+            <div class="col-12 col-xxl-6 visit-hour"><div class="container-fluid bg-white">
+              <div class="p-3 m-0">
+                <h4 class="card-title text-start mt-3">VISIT HOUR</h4>
+                <div class="row day-night-container my-3"></div>
+                <canvas class="visit-hour-chart"></canvas>
+              </div></div>
           </div>
 
           <!-- order start -->
-          <div class="card">
+          <div class="card mt-3">
             <div class="card-body">
               <h4 class="card-title fs-5 text-start">ORDER LIST</h4>
               <div class="table-responsive">
@@ -438,5 +443,7 @@
       type="module"
       src="./components/restaurant-rating/restaurant-rating.js"
     ></script>
+    <!-- visit hour -->
+    <script type="module" src="./components/visit-hour/visit-hour.js"></script>
   </body>
 </html>

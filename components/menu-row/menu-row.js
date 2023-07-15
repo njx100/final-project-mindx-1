@@ -12,7 +12,7 @@ for (let i = 0; i < menu.length; i++) {
         <div class="card-description fs-6">
 
           <div class="row justify-content-between align-items-center">
-            <h5 class="col-auto card-title">${menu[i].name}</h5>
+            <h5 class="col card-title">${menu[i].name}</h5>
             <h4 class="col-auto">
               <span class="badge badge-primary fs-6 p-2">$${menu[i].price}</span>
             </h4>

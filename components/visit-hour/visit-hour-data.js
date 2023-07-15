@@ -1,0 +1,51 @@
+export const visitHourData = [
+  {
+    day: 1,
+    month: 5,
+    year: 2023,
+    customerDay: 73,
+    customerNight: 57,
+  },
+  {
+    day: 2,
+    month: 5,
+    year: 2023,
+    customerDay: 44,
+    customerNight: 80,
+  },
+  {
+    day: 2,
+    month: 5,
+    year: 2023,
+    customerDay: 55,
+    customerNight: 50,
+  },
+  {
+    day: 1,
+    month: 5,
+    year: 2023,
+    customerDay: 21,
+    customerNight: 79,
+  },
+  {
+    day: 1,
+    month: 5,
+    year: 2023,
+    customerDay: 34,
+    customerNight: 20,
+  },
+  {
+    day: 1,
+    month: 5,
+    year: 2023,
+    customerDay: 100,
+    customerNight: 93,
+  },
+  {
+    day: 1,
+    month: 5,
+    year: 2023,
+    customerDay: 87,
+    customerNight: 85,
+  },
+];
