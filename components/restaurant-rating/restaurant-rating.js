@@ -54,7 +54,7 @@ const restaurantRatingHTML = `<div class="card">
         <div>
           <div class="row justify-content-between text-start">
             <p class="col-12 col-lg-6 mb-0">Food</p>
-            <p class="col-12 col-lg-6 mb-2">${food}(${(
+            <p class="col-12 col-lg-6 mb-2">${food} (${(
   (food / total) *
   100
 ).toFixed(2)}%)</p>
