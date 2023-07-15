@@ -18,13 +18,19 @@
   border-bottom: 2px solid rgba(149, 204, 71, 0.7) !important;
 }
 
+.graph-tab,
+.reviews-tab {
+  border: 2px solid rgba(149, 204, 71, 0) !important;
+  cursor: pointer;
+}
+
 .graph-tab:hover,
 .reviews-tab:hover,
 .graph-tab:active,
 .reviews-tab:active {
   border: 2px solid rgba(149, 204, 71, 0) !important;
   border-bottom: 2px solid rgba(149, 204, 71, 0.7) !important;
-  transition: border-bottom-color ease 150ms;
+  transition: all ease 250ms;
 }
 
 .media img {
