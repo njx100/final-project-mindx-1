@@ -121,20 +121,20 @@
         <nav class="col-12 py-4 navbar navbar-expand-lg navbar-light bg-white">
           <div class="container-fluid">
             <button
-              class="col-auto btn px-2 py-0 text-center open-btn d-lg-none"
+              class="col-auto btn px-0 px-sm-2 py-0 text-center open-btn d-lg-none"
             >
               <i class="fa-solid fa-bars fa-2x"></i>
             </button>
             <form
-              class="col-auto search-container float-start d-flex align-items-center ms-2"
+              class="col-auto search-container float-start d-none d-sm-flex align-items-center ms-2"
             >
               <i
-                class="fa-solid fa-magnifying-glass float-left mx-0 d-none d-md-block"
+                class="fa-solid fa-magnifying-glass float-left ms-1 d-none d-md-block"
                 style="color: #000000"
               ></i>
               <input
                 type="search"
-                class="form-control border-0 float-start shadow-none"
+                class="form-control mx-0 border-0 float-start shadow-none"
                 placeholder="Search here"
                 name=""
                 id=""
@@ -162,15 +162,12 @@
                 </button>
               </li>
               <li class="nav-item">
-                <div
-                  class="collapse navbar-collapse"
-                  id="navbarNavDarkDropdown"
-                >
+                <div class="navbar" id="navbarNavDarkDropdown">
                   <ul class="navbar-nav">
-                    <li class="nav-item dropdown">
+                    <li class="nav-link dropdown">
                       <a
-                        class="nav-link dropdown-toggle d-flex align-items-center"
-                        id="profileDropDownMenu"
+                        class="dropdown-toggle d-flex align-items-center text-dark"
+                        id="accountDropDownMenu"
                         role="button"
                         data-bs-toggle="dropdown"
                         aria-expanded="false"
@@ -179,7 +176,7 @@
                       </a>
                       <ul
                         class="dropdown-menu dropdown-menu-end dropdown-menu-light"
-                        aria-labelledby="profileDropDownMenu"
+                        aria-labelledby="accountDropDownMenu"
                       >
                         <li>
                           <a class="dropdown-item" href="#">Account</a>
@@ -199,6 +196,21 @@
               </li>
             </ul>
           </div>
+          <form
+            class="col-auto search-container float-start d-sm-none d-flex align-items-center ms-2"
+          >
+            <i
+              class="fa-solid fa-magnifying-glass float-left"
+              style="color: #000000"
+            ></i>
+            <input
+              type="search"
+              class="form-control mx-0 border-0 float-start shadow-none"
+              placeholder="Search here"
+              name=""
+              id=""
+            />
+          </form>
         </nav>
         <!-- main content -->
         <div
