@@ -39,3 +39,12 @@ const tooltipTriggerList = document.querySelectorAll(
 const tooltipList = [...tooltipTriggerList].map(
   (tooltipTriggerEl) => new bootstrap.Tooltip(tooltipTriggerEl)
 );
+
+const closeIcons = document.querySelectorAll(".fa-close");
+
+closeIcons.forEach((icon) => {
+  icon.addEventListener("click", () => {
+    const row = icon.closest("tr");
+    row.remove();
+  });
+});
