@@ -4,7 +4,7 @@ let menuRowHTML = "";
 
 for (let i = 0; i < menu.length; i++) {
   menuRowHTML += `
-    <div class="card col-12 col-md-6 col-xl d-block g-0 m-1">
+    <div class="card col-12 col-md-6 col-xl d-block g-0 my-2">
       <div class="card-image m-0">
         <img src="${menu[i].image}"class=" card-img-top" alt="error">
       </div>
