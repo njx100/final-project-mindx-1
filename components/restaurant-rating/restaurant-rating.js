@@ -54,9 +54,9 @@ const restaurantRatingHTML = `<div class="card">
         class="col-12 col-md-5 progress-rating-chart justify-content-between"
       >
         <div>
-          <div class="row justify-content-between">
-            <p class="col-auto">Food</p>
-            <p class="col-auto"><b class="text-dark">${food} reviews</b> (${(
+          <div class="row justify-content-between text-start">
+            <p class="col-12 col-lg-auto mb-0">Food</p>
+            <p class="col-12 col-lg-auto mb-2"><b class="text-dark">${food} reviews</b> (${(
   (food / total) *
   100
 ).toFixed(2)}%)</p>
@@ -70,9 +70,9 @@ const restaurantRatingHTML = `<div class="card">
           </div>
         </div>
         <div class="mt-4">
-          <div class="row justify-content-between">
-            <p class="col-auto">Service</p>
-            <p class="col-auto"><b class="text-dark">${service} reviews</b> (${(
+          <div class="row justify-content-between text-start">
+            <p class="col-12 col-lg-auto mb-0">Service</p>
+            <p class="col-12 col-lg-auto mb-2"><b class="text-dark">${service} reviews</b> (${(
   (service / total) *
   100
 ).toFixed(2)}%)</p>
@@ -86,9 +86,9 @@ const restaurantRatingHTML = `<div class="card">
           </div>
         </div>
         <div class="mt-4">
-          <div class="row justify-content-between">
-            <p class="col-auto">Waiting Time</p>
-            <p class="col-auto"><b class="text-dark">${waiting_time} reviews</b> (${(
+          <div class="row justify-content-between text-start">
+            <p class="col-12 col-lg-auto mb-0">Waiting Time</p>
+            <p class="col-12 col-lg-auto mb-2"><b class="text-dark">${waiting_time} reviews</b> (${(
   (waiting_time / total) *
   100
 ).toFixed(2)}%)</p>
@@ -102,9 +102,9 @@ const restaurantRatingHTML = `<div class="card">
           </div>
         </div>
         <div class="mt-4">
-          <div class="row justify-content-between">
-            <p class="col-auto">Others</p>
-            <p class="col-auto"><b class="text-dark">${others} reviews</b> (${(
+          <div class="row justify-content-between text-start">
+            <p class="col-12 col-lg-auto mb-0">Others</p>
+            <p class="col-12 col-lg-auto mb-2"><b class="text-dark">${others} reviews</b> (${(
   (others / total) *
   100
 ).toFixed(2)}%)</p>
@@ -122,7 +122,7 @@ const restaurantRatingHTML = `<div class="card">
   </div>
   <!-- reviews tab content -->
   <div
-    class="container-fluid flex-column flex-fill reviews-tab-content"
+    class="container-fluid flex-column reviews-tab-content"
   >
   <div class="row">
   <div class="row col-12 justify-content-between">
