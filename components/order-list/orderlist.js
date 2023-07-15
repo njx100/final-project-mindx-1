@@ -45,7 +45,7 @@ const closeIcons = document.querySelectorAll(".fa-close");
 closeIcons.forEach((icon) => {
   icon.addEventListener("click", () => {
     const row = icon.closest("tr");
-    // row.style.display = "none";
-    row.remove();
+    row.style.display = "none";
+    // row.remove();
   });
 });
