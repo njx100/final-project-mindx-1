@@ -45,8 +45,10 @@ const closeIcons = document.querySelectorAll(".fa-close");
 closeIcons.forEach((icon) => {
   icon.addEventListener("click", () => {
     const row = icon.closest("tr");
-
-    row.style.display = "none";
-    // row.remove();
+    const tooltip = tooltipList.find((t) => t._element === icon);
+    if (tooltip) {
+      tooltip.dispose();
+    }
+    row.remove();
   });
 });
