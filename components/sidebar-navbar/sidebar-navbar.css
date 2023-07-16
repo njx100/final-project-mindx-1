@@ -120,3 +120,9 @@ hr.h-color {
     z-index: 1;
   }
 }
+
+@media screen and (min-width: 1200px) {
+  .restaurant-rating {
+    border-right: 2px solid #f8f9fa;
+  }
+}

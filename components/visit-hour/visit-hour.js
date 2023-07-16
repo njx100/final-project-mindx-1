@@ -5,13 +5,13 @@ const dayNightContainerEl = document.querySelector(".day-night-container");
 // render day night data
 const dayNightHTML = `
 <div class="row col justify-content-center day-container">
-<p class="text-center">Day</p>
+<p class="text-center mb-0">Day</p>
 <span class="col-auto"
   ><i class="fa-solid fa-up-long" style="color: #95cc47"></i></span
 ><strong class="col-auto">82.24%</strong>
 </div>
 <div class="row col justify-content-center night-container">
-<p class="text-center">Night</p>
+<p class="text-center mb-0">Night</p>
 <span class="col-auto"
   ><i class="fa-solid fa-down-long" style="color: #ee0b0d"></i></span
 ><strong class="col-auto">12.24%</strong>
